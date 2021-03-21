@@ -1,0 +1,49 @@
+<html>
+
+<head>
+	
+	<title>Fast Whatsapp</title>
+	
+</head>
+
+<body>
+	<center>
+		<h2>
+		Fast Whatsapp
+		</h2>
+		<br>
+		<p>Silahkan Masukan Nomor whatsapp nya</p>
+		
+		<br>
+		<input type="text" id="notelp" />
+		<button onclick="summonBtn()"> OK </button>
+		
+		<br>
+		<br>
+			<div id="ahref"> </div>
+			
+		<br>
+	</center>
+</body>
+
+
+	<script type="text/javascript">
+	
+	
+		function summonBtn()
+		{
+		var nowa = document.getElementById('notelp').value;		
+		
+		console.log(nowa[0]);		
+		document.getElementById('ahref').innerHTML = `<b><a href="https://api.whatsapp.com/send?phone=${nowa}&text=Teks">HUBUNGI</b></a>`;
+		
+		
+		}
+		
+		
+		
+		
+	</script>
+
+
+</html>
